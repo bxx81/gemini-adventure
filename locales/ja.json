@@ -25,6 +25,11 @@
   "safetyHelp": "AIが物語の中で潜在的にデリケートなコンテンツをどの程度厳密にフィルタリングするかを調整します。",
   "beginAdventureButton": "冒険を始める",
   "beginningAdventureButton": "冒険を開始中...",
+  "loadAdventureButton": "冒険をロード",
+  "saveGameButtonLabel": "ゲームを保存",
+  "gameSavedNotification": "ゲームを保存しました！",
+  "saveFailedNotification": "保存失敗",
+  "saveErrorQuota": "保存失敗: 容量不足です。古いセーブを削除してください。",
   "regenerateImageLabel": "新しいシードで画像を再生成",
   "playAgainButton": "もう一度プレイ",
   "loadingDestiny": "運命を紡いでいます...",
@@ -39,5 +44,12 @@
   "apiKeyInputLabel": "Gemini APIキー",
   "apiKeySaveButton": "キーを保存",
   "apiKeyCancelButton": "キャンセル",
-  "noteLink": "キャラクターとコンテンツの安全性に関する注記"
+  "noteLink": "キャラクターとコンテンツの安全性に関する注記",
+  "loadScreenTitle": "保存した冒険をロード",
+  "loadScreenNoSaves": "保存されたゲームはありません。",
+  "loadScreenTimestampLabel": "保存日時:",
+  "loadButton": "ロード",
+  "deleteButton": "削除",
+  "deleteConfirm": "このセーブデータを本当に削除しますか？",
+  "backButton": "戻る"
 }

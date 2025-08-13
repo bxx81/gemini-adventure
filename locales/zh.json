@@ -25,6 +25,11 @@
   "safetyHelp": "调整 AI 在故事中过滤潜在敏感内容的严格程度。",
   "beginAdventureButton": "开始冒险",
   "beginningAdventureButton": "正在开始冒险...",
+  "loadAdventureButton": "加载冒险",
+  "saveGameButtonLabel": "保存游戏",
+  "gameSavedNotification": "游戏已保存！",
+  "saveFailedNotification": "保存失败",
+  "saveErrorQuota": "保存失败：存储已满。请删除旧的存档。",
   "regenerateImageLabel": "用新种子重新生成图像",
   "playAgainButton": "再玩一次",
   "loadingDestiny": "正在塑造你的命运...",
@@ -39,5 +44,12 @@
   "apiKeyInputLabel": "Gemini API 密钥",
   "apiKeySaveButton": "保存密钥",
   "apiKeyCancelButton": "取消",
-  "noteLink": "关于角色和内容安全的说明"
+  "noteLink": "关于角色和内容安全的说明",
+  "loadScreenTitle": "加载已保存的冒险",
+  "loadScreenNoSaves": "您没有已保存的游戏。",
+  "loadScreenTimestampLabel": "保存于:",
+  "loadButton": "加载",
+  "deleteButton": "删除",
+  "deleteConfirm": "您确定要删除此存档吗？",
+  "backButton": "返回"
 }
