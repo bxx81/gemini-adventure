@@ -3,9 +3,10 @@
   "short_name": "Gemini Adventure",
   "description": "A dynamic text adventure game where the story and visuals are generated in real-time by AI. Each choice you make crafts a new part of your unique journey.",
   "start_url": "./",
+  "id": "/gemini-adventure/",
   "display": "standalone",
-  "background_color": "#DECDBD",
-  "theme_color": "#FEE7D7",
+  "background_color": "#F9FAFB",
+  "theme_color": "#EEEFF0",
   "icons": [
     {
       "src": "icons/favicon192.png",
