@@ -10,7 +10,6 @@
     <link rel="manifest" href="/gemini-adventure/manifest.json">
     <meta name="theme-color" content="#EEEFF0" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#1C1C1E" media="(prefers-color-scheme: dark)">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -30,18 +29,6 @@
       }
     </style>
     <script>
-      // Set theme on initial load to prevent FOUC (Flash of Unstyled Content)
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-      // Configure Tailwind for class-based dark mode
-      tailwind.config = {
-        darkMode: 'class',
-      }
-    </script>
-    <script>
       // Define a placeholder for the app version to prevent runtime errors.
       // This is expected to be replaced by a build process.
       const __APP_VERSION__ = 'dev';
@@ -58,7 +45,8 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/gemini-adventure/assets/index-DKbTepp4.js"></script>
+  <script type="module" crossorigin src="/gemini-adventure/assets/index-DQcsKVYS.js"></script>
+  <link rel="stylesheet" crossorigin href="/gemini-adventure/assets/index-DyP5Ul8r.css">
 </head>
   <body>
     <div id="root"></div>
