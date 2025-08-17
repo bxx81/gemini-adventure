@@ -1,0 +1,1311 @@
+<!DOCTYPE html><html><head>
+      <title>note</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+.markdown-body {
+  --base-size-4: 0.25rem;
+  --base-size-8: 0.5rem;
+  --base-size-16: 1rem;
+  --base-size-24: 1.5rem;
+  --base-size-40: 2.5rem;
+  --base-text-weight-normal: 400;
+  --base-text-weight-medium: 500;
+  --base-text-weight-semibold: 600;
+  --fontStack-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  --fgColor-accent: Highlight;
+}
+@media (prefers-color-scheme: dark) {
+  .markdown-body,
+  [data-theme="dark"] {
+    /* dark */
+    color-scheme: dark;
+    --focus-outlineColor: #1f6feb;
+    --fgColor-default: #f0f6fc;
+    --fgColor-muted: #9198a1;
+    --fgColor-accent: #4493f8;
+    --fgColor-success: #3fb950;
+    --fgColor-attention: #d29922;
+    --fgColor-danger: #f85149;
+    --fgColor-done: #ab7df8;
+    --bgColor-default: #0d1117;
+    --bgColor-muted: #151b23;
+    --bgColor-neutral-muted: #656c7633;
+    --bgColor-attention-muted: #bb800926;
+    --borderColor-default: #3d444d;
+    --borderColor-muted: #3d444db3;
+    --borderColor-neutral-muted: #3d444db3;
+    --borderColor-accent-emphasis: #1f6feb;
+    --borderColor-success-emphasis: #238636;
+    --borderColor-attention-emphasis: #9e6a03;
+    --borderColor-danger-emphasis: #da3633;
+    --borderColor-done-emphasis: #8957e5;
+    --color-prettylights-syntax-comment: #9198a1;
+    --color-prettylights-syntax-constant: #79c0ff;
+    --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+    --color-prettylights-syntax-entity: #d2a8ff;
+    --color-prettylights-syntax-storage-modifier-import: #f0f6fc;
+    --color-prettylights-syntax-entity-tag: #7ee787;
+    --color-prettylights-syntax-keyword: #ff7b72;
+    --color-prettylights-syntax-string: #a5d6ff;
+    --color-prettylights-syntax-variable: #ffa657;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+    --color-prettylights-syntax-brackethighlighter-angle: #9198a1;
+    --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+    --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+    --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+    --color-prettylights-syntax-carriage-return-bg: #b62324;
+    --color-prettylights-syntax-string-regexp: #7ee787;
+    --color-prettylights-syntax-markup-list: #f2cc60;
+    --color-prettylights-syntax-markup-heading: #1f6feb;
+    --color-prettylights-syntax-markup-italic: #f0f6fc;
+    --color-prettylights-syntax-markup-bold: #f0f6fc;
+    --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+    --color-prettylights-syntax-markup-deleted-bg: #67060c;
+    --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+    --color-prettylights-syntax-markup-inserted-bg: #033a16;
+    --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+    --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+    --color-prettylights-syntax-markup-ignored-text: #f0f6fc;
+    --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+    --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #3d444d;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .markdown-body,
+  [data-theme="light"] {
+    /* light */
+    color-scheme: light;
+    --focus-outlineColor: #0969da;
+    --fgColor-default: #1f2328;
+    --fgColor-muted: #59636e;
+    --fgColor-accent: #0969da;
+    --fgColor-success: #1a7f37;
+    --fgColor-attention: #9a6700;
+    --fgColor-danger: #d1242f;
+    --fgColor-done: #8250df;
+    --bgColor-default: #ffffff;
+    --bgColor-muted: #f6f8fa;
+    --bgColor-neutral-muted: #818b981f;
+    --bgColor-attention-muted: #fff8c5;
+    --borderColor-default: #d1d9e0;
+    --borderColor-muted: #d1d9e0b3;
+    --borderColor-neutral-muted: #d1d9e0b3;
+    --borderColor-accent-emphasis: #0969da;
+    --borderColor-success-emphasis: #1a7f37;
+    --borderColor-attention-emphasis: #9a6700;
+    --borderColor-danger-emphasis: #cf222e;
+    --borderColor-done-emphasis: #8250df;
+    --color-prettylights-syntax-comment: #59636e;
+    --color-prettylights-syntax-constant: #0550ae;
+    --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+    --color-prettylights-syntax-entity: #6639ba;
+    --color-prettylights-syntax-storage-modifier-import: #1f2328;
+    --color-prettylights-syntax-entity-tag: #0550ae;
+    --color-prettylights-syntax-keyword: #cf222e;
+    --color-prettylights-syntax-string: #0a3069;
+    --color-prettylights-syntax-variable: #953800;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+    --color-prettylights-syntax-brackethighlighter-angle: #59636e;
+    --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+    --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+    --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+    --color-prettylights-syntax-carriage-return-bg: #cf222e;
+    --color-prettylights-syntax-string-regexp: #116329;
+    --color-prettylights-syntax-markup-list: #3b2300;
+    --color-prettylights-syntax-markup-heading: #0550ae;
+    --color-prettylights-syntax-markup-italic: #1f2328;
+    --color-prettylights-syntax-markup-bold: #1f2328;
+    --color-prettylights-syntax-markup-deleted-text: #82071e;
+    --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+    --color-prettylights-syntax-markup-inserted-text: #116329;
+    --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+    --color-prettylights-syntax-markup-changed-text: #953800;
+    --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+    --color-prettylights-syntax-markup-ignored-text: #d1d9e0;
+    --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+    --color-prettylights-syntax-meta-diff-range: #8250df;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #818b98;
+  }
+}
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  color: var(--fgColor-default);
+  background-color: var(--bgColor-default);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+.markdown-body details,
+.markdown-body figcaption,
+.markdown-body figure {
+  display: block;
+}
+.markdown-body summary {
+  display: list-item;
+}
+.markdown-body [hidden] {
+  display: none !important;
+}
+.markdown-body a {
+  background-color: transparent;
+  color: var(--fgColor-accent);
+  text-decoration: none;
+}
+.markdown-body abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+.markdown-body b,
+.markdown-body strong {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+.markdown-body dfn {
+  font-style: italic;
+}
+.markdown-body h1 {
+  margin: 0.67em 0;
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid var(--borderColor-muted);
+}
+.markdown-body mark {
+  background-color: var(--bgColor-attention-muted);
+  color: var(--fgColor-default);
+}
+.markdown-body small {
+  font-size: 90%;
+}
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+}
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+.markdown-body figure {
+  margin: 1em var(--base-size-40);
+}
+.markdown-body hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid var(--borderColor-muted);
+  height: 0.25em;
+  padding: 0;
+  margin: var(--base-size-24) 0;
+  background-color: var(--borderColor-default);
+  border: 0;
+}
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.markdown-body [type=button],
+.markdown-body [type=reset],
+.markdown-body [type=submit] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+.markdown-body [type=checkbox],
+.markdown-body [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.markdown-body [type=number]::-webkit-inner-spin-button,
+.markdown-body [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+.markdown-body [type=search]::-webkit-search-cancel-button,
+.markdown-body [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.markdown-body ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+.markdown-body ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  appearance: button;
+  font: inherit;
+}
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+.markdown-body ::placeholder {
+  color: var(--fgColor-muted);
+  opacity: 1;
+}
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  font-variant: tabular-nums;
+}
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+.markdown-body details summary {
+  cursor: pointer;
+}
+.markdown-body a:focus,
+.markdown-body [role=button]:focus,
+.markdown-body input[type=radio]:focus,
+.markdown-body input[type=checkbox]:focus {
+  outline: 2px solid var(--focus-outlineColor);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+.markdown-body a:focus:not(:focus-visible),
+.markdown-body [role=button]:focus:not(:focus-visible),
+.markdown-body input[type=radio]:focus:not(:focus-visible),
+.markdown-body input[type=checkbox]:focus:not(:focus-visible) {
+  outline: solid 1px transparent;
+}
+.markdown-body a:focus-visible,
+.markdown-body [role=button]:focus-visible,
+.markdown-body input[type=radio]:focus-visible,
+.markdown-body input[type=checkbox]:focus-visible {
+  outline: 2px solid var(--focus-outlineColor);
+  outline-offset: -2px;
+  box-shadow: none;
+}
+.markdown-body a:not([class]):focus,
+.markdown-body a:not([class]):focus-visible,
+.markdown-body input[type=radio]:focus,
+.markdown-body input[type=radio]:focus-visible,
+.markdown-body input[type=checkbox]:focus,
+.markdown-body input[type=checkbox]:focus-visible {
+  outline-offset: 0;
+}
+.markdown-body kbd {
+  display: inline-block;
+  padding: var(--base-size-4);
+  font: 11px var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
+  line-height: 10px;
+  color: var(--fgColor-default);
+  vertical-align: middle;
+  background-color: var(--bgColor-muted);
+  border: solid 1px var(--borderColor-neutral-muted);
+  border-bottom-color: var(--borderColor-neutral-muted);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 var(--borderColor-neutral-muted);
+}
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: var(--base-size-24);
+  margin-bottom: var(--base-size-16);
+  font-weight: var(--base-text-weight-semibold, 600);
+  line-height: 1.25;
+}
+.markdown-body h2 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--borderColor-muted);
+}
+.markdown-body h3 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1.25em;
+}
+.markdown-body h4 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1em;
+}
+.markdown-body h5 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 0.875em;
+}
+.markdown-body h6 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 0.85em;
+  color: var(--fgColor-muted);
+}
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.markdown-body blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: var(--fgColor-muted);
+  border-left: 0.25em solid var(--borderColor-default);
+}
+.markdown-body ul,
+.markdown-body ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+.markdown-body dd {
+  margin-left: 0;
+}
+.markdown-body tt,
+.markdown-body code,
+.markdown-body samp {
+  font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
+  font-size: 12px;
+}
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
+  font-size: 12px;
+  word-wrap: normal;
+}
+.markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+.markdown-body input::-webkit-outer-spin-button,
+.markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+.markdown-body .mr-2 {
+  margin-right: var(--base-size-8, 8px) !important;
+}
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.markdown-body > *:first-child {
+  margin-top: 0 !important;
+}
+.markdown-body > *:last-child {
+  margin-bottom: 0 !important;
+}
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+.markdown-body .absent {
+  color: var(--fgColor-danger);
+}
+.markdown-body .anchor {
+  float: left;
+  padding-right: var(--base-size-4);
+  margin-left: -20px;
+  line-height: 1;
+}
+.markdown-body .anchor:focus {
+  outline: none;
+}
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body details {
+  margin-top: 0;
+  margin-bottom: var(--base-size-16);
+}
+.markdown-body blockquote > :first-child {
+  margin-top: 0;
+}
+.markdown-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: var(--fgColor-default);
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+  padding: 0 0.2em;
+  font-size: inherit;
+}
+.markdown-body summary h1,
+.markdown-body summary h2,
+.markdown-body summary h3,
+.markdown-body summary h4,
+.markdown-body summary h5,
+.markdown-body summary h6 {
+  display: inline-block;
+}
+.markdown-body summary h1 .anchor,
+.markdown-body summary h2 .anchor,
+.markdown-body summary h3 .anchor,
+.markdown-body summary h4 .anchor,
+.markdown-body summary h5 .anchor,
+.markdown-body summary h6 .anchor {
+  margin-left: -40px;
+}
+.markdown-body summary h1,
+.markdown-body summary h2 {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+.markdown-body ol[type="a s"] {
+  list-style-type: lower-alpha;
+}
+.markdown-body ol[type="A s"] {
+  list-style-type: upper-alpha;
+}
+.markdown-body ol[type="i s"] {
+  list-style-type: lower-roman;
+}
+.markdown-body ol[type="I s"] {
+  list-style-type: upper-roman;
+}
+.markdown-body ol[type="1"] {
+  list-style-type: decimal;
+}
+.markdown-body div > ol:not([type]) {
+  list-style-type: decimal;
+}
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.markdown-body li > p {
+  margin-top: var(--base-size-16);
+}
+.markdown-body li + li {
+  margin-top: 0.25em;
+}
+.markdown-body dl {
+  padding: 0;
+}
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: var(--base-size-16);
+  font-size: 1em;
+  font-style: italic;
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+.markdown-body dl dd {
+  padding: 0 var(--base-size-16);
+  margin-bottom: var(--base-size-16);
+}
+.markdown-body table th {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid var(--borderColor-default);
+}
+.markdown-body table td > :last-child {
+  margin-bottom: 0;
+}
+.markdown-body table tr {
+  background-color: var(--bgColor-default);
+  border-top: 1px solid var(--borderColor-muted);
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--bgColor-muted);
+}
+.markdown-body table img {
+  background-color: transparent;
+}
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+.markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+.markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+.markdown-body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--borderColor-default);
+}
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+.markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--fgColor-default);
+}
+.markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.markdown-body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+.markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+.markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.markdown-body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+.markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+.markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+.markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+.markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+.markdown-body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+.markdown-body code,
+.markdown-body tt {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--bgColor-neutral-muted);
+  border-radius: 6px;
+}
+.markdown-body code br,
+.markdown-body tt br {
+  display: none;
+}
+.markdown-body del code {
+  text-decoration: inherit;
+}
+.markdown-body samp {
+  font-size: 85%;
+}
+.markdown-body pre code {
+  font-size: 100%;
+}
+.markdown-body pre > code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-body .highlight {
+  margin-bottom: var(--base-size-16);
+}
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: var(--base-size-16);
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  color: var(--fgColor-default);
+  background-color: var(--bgColor-muted);
+  border-radius: 6px;
+}
+.markdown-body pre code,
+.markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.markdown-body .csv-data td,
+.markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+.markdown-body .csv-data .blob-num {
+  padding: 10px var(--base-size-8) 9px;
+  text-align: right;
+  background: var(--bgColor-default);
+  border: 0;
+}
+.markdown-body .csv-data tr {
+  border-top: 0;
+}
+.markdown-body .csv-data th {
+  font-weight: var(--base-text-weight-semibold, 600);
+  background: var(--bgColor-muted);
+  border-top: 0;
+}
+.markdown-body [data-footnote-ref]::before {
+  content: "[";
+}
+.markdown-body [data-footnote-ref]::after {
+  content: "]";
+}
+.markdown-body .footnotes {
+  font-size: 12px;
+  color: var(--fgColor-muted);
+  border-top: 1px solid var(--borderColor-default);
+}
+.markdown-body .footnotes ol {
+  padding-left: var(--base-size-16);
+}
+.markdown-body .footnotes ol ul {
+  display: inline-block;
+  padding-left: var(--base-size-16);
+  margin-top: var(--base-size-16);
+}
+.markdown-body .footnotes li {
+  position: relative;
+}
+.markdown-body .footnotes li:target::before {
+  position: absolute;
+  top: calc(var(--base-size-8)*-1);
+  right: calc(var(--base-size-8)*-1);
+  bottom: calc(var(--base-size-8)*-1);
+  left: calc(var(--base-size-24)*-1);
+  pointer-events: none;
+  content: "";
+  border: 2px solid var(--borderColor-accent-emphasis);
+  border-radius: 6px;
+}
+.markdown-body .footnotes li:target {
+  color: var(--fgColor-default);
+}
+.markdown-body .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+.markdown-body body:has(:modal) {
+  padding-right: var(--dialog-scrollgutter) !important;
+}
+.markdown-body .pl-c {
+  color: var(--color-prettylights-syntax-comment);
+}
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: var(--color-prettylights-syntax-constant);
+}
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: var(--color-prettylights-syntax-entity);
+}
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+  color: var(--color-prettylights-syntax-storage-modifier-import);
+}
+.markdown-body .pl-ent {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+.markdown-body .pl-k {
+  color: var(--color-prettylights-syntax-keyword);
+}
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+  color: var(--color-prettylights-syntax-string);
+}
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+  color: var(--color-prettylights-syntax-variable);
+}
+.markdown-body .pl-bu {
+  color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+}
+.markdown-body .pl-ii {
+  color: var(--color-prettylights-syntax-invalid-illegal-text);
+  background-color: var(--color-prettylights-syntax-invalid-illegal-bg);
+}
+.markdown-body .pl-c2 {
+  color: var(--color-prettylights-syntax-carriage-return-text);
+  background-color: var(--color-prettylights-syntax-carriage-return-bg);
+}
+.markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-string-regexp);
+}
+.markdown-body .pl-ml {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-heading);
+}
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: var(--color-prettylights-syntax-markup-italic);
+}
+.markdown-body .pl-mb {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-bold);
+}
+.markdown-body .pl-md {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+.markdown-body .pl-mi1 {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+.markdown-body .pl-mc {
+  color: var(--color-prettylights-syntax-markup-changed-text);
+  background-color: var(--color-prettylights-syntax-markup-changed-bg);
+}
+.markdown-body .pl-mi2 {
+  color: var(--color-prettylights-syntax-markup-ignored-text);
+  background-color: var(--color-prettylights-syntax-markup-ignored-bg);
+}
+.markdown-body .pl-mdr {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
+.markdown-body .pl-ba {
+  color: var(--color-prettylights-syntax-brackethighlighter-angle);
+}
+.markdown-body .pl-sg {
+  color: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
+}
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: var(--color-prettylights-syntax-constant-other-reference-link);
+}
+.markdown-body [role=button]:focus:not(:focus-visible),
+.markdown-body [role=tabpanel][tabindex="0"]:focus:not(:focus-visible),
+.markdown-body button:focus:not(:focus-visible),
+.markdown-body summary:focus:not(:focus-visible),
+.markdown-body a:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+.markdown-body [tabindex="0"]:focus:not(:focus-visible),
+.markdown-body details-dialog:focus:not(:focus-visible) {
+  outline: none;
+}
+.markdown-body g-emoji {
+  display: inline-block;
+  min-width: 1ch;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: var(--base-text-weight-normal, 400);
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+.markdown-body g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+.markdown-body .task-list-item label {
+  font-weight: var(--base-text-weight-normal, 400);
+}
+.markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+.markdown-body .task-list-item + .task-list-item {
+  margin-top: var(--base-size-4);
+}
+.markdown-body .task-list-item .handle {
+  display: none;
+}
+.markdown-body .task-list-item-checkbox {
+  margin: 0 0.2em 0.25em -1.4em;
+  vertical-align: middle;
+}
+.markdown-body ul:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em 0.25em 0.2em;
+}
+.markdown-body ol:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em 0.25em 0.2em;
+}
+.markdown-body .contains-task-list:hover .task-list-item-convert-container,
+.markdown-body .contains-task-list:focus-within .task-list-item-convert-container {
+  display: block;
+  width: auto;
+  height: 24px;
+  overflow: visible;
+  clip: auto;
+}
+.markdown-body ::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+.markdown-body .markdown-alert {
+  padding: var(--base-size-8) var(--base-size-16);
+  margin-bottom: var(--base-size-16);
+  color: inherit;
+  border-left: 0.25em solid var(--borderColor-default);
+}
+.markdown-body .markdown-alert > :first-child {
+  margin-top: 0;
+}
+.markdown-body .markdown-alert > :last-child {
+  margin-bottom: 0;
+}
+.markdown-body .markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: var(--base-text-weight-medium, 500);
+  align-items: center;
+  line-height: 1;
+}
+.markdown-body .markdown-alert.markdown-alert-note {
+  border-left-color: var(--borderColor-accent-emphasis);
+}
+.markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--fgColor-accent);
+}
+.markdown-body .markdown-alert.markdown-alert-important {
+  border-left-color: var(--borderColor-done-emphasis);
+}
+.markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--fgColor-done);
+}
+.markdown-body .markdown-alert.markdown-alert-warning {
+  border-left-color: var(--borderColor-attention-emphasis);
+}
+.markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--fgColor-attention);
+}
+.markdown-body .markdown-alert.markdown-alert-tip {
+  border-left-color: var(--borderColor-success-emphasis);
+}
+.markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--fgColor-success);
+}
+.markdown-body .markdown-alert.markdown-alert-caution {
+  border-left-color: var(--borderColor-danger-emphasis);
+}
+.markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--fgColor-danger);
+}
+.markdown-body > *:first-child > .heading-element:first-child {
+  margin-top: 0 !important;
+}
+.markdown-body .highlight pre:has(+.zeroclipboard-container) {
+  min-height: 52px;
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<ul>
+<li><a href="#%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%AE%E5%AE%89%E5%85%A8%E6%80%A7%E3%81%8A%E3%82%88%E3%81%B3ai%E3%81%AE%E6%80%A7%E8%B3%AA%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%B3%A8%E8%A8%98">日本語</a></li>
+<li><a href="#notes-on-characters-content-safety-and-the-nature-of-ai">English</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E8%A7%92%E8%89%B2%E5%86%85%E5%AE%B9%E5%AE%89%E5%85%A8%E5%8F%8Aai%E6%9C%AC%E8%B4%A8%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">中文</a></li>
+</ul>
+<h1 id="キャラクター-コンテンツの安全性-およびaiの性質に関する注記">キャラクター、コンテンツの安全性、およびAIの性質に関する注記 </h1>
+<h2 id="はじめに">はじめに </h2>
+<p>「ジェミニ・アドベンチャー」をプレイいただき、誠にありがとうございます。このゲームは、最先端の生成AI技術を用いて、あなただけのユニークな物語とビジュアルをリアルタイムで創り出します。</p>
+<p>最高の体験を提供するためにAIは常に学習していますが、その性質上、いくつかの点についてご理解いただいた上で、冒険をお楽しみいただけますと幸いです。</p>
+<h3 id="1-aiによって生成されるコンテンツについて">1. AIによって生成されるコンテンツについて </h3>
+<p>本ゲームの物語、シーン描写、選択肢、そして画像はすべてAIによって動的に生成されます。そのため、物語の展開は予測不可能であり、時に開発者が意図しない、あるいは不適切と感じられる表現が生成される可能性があります。</p>
+<p>私たちは安全な体験を提供するためのフィルターを設けていますが、AIが生成するコンテンツのすべてを完全に制御することは困難です。これは現在のAI技術の特性としてご了承ください。</p>
+<h3 id="2-キャラクター描写の一貫性について">2. キャラクター描写の一貫性について </h3>
+<p>AIは、物語の主人公や登場人物の外見（性別、髪型、服装など）を記憶し、一貫性を保つよう設計されています。しかし、物語が長く複雑になるにつれて、稀に以前の設定と矛盾した描写をしてしまうことがあります。</p>
+<p>これはAIの記憶の限界や、創造的な解釈によるものです。もしキャラクターの外見が突然変わってしまった場合は、それも物語の新たな展開としてお楽しみいただくか、心の中でそっと修正していただけると助かります。</p>
+<h3 id="3-コンテンツの安全性に関する設定">3. コンテンツの安全性に関する設定 </h3>
+<p>本ゲームでは、ユーザーがAIの応答の厳密さを選択できる「AIの安全性レベル」設定を用意しています。</p>
+<ul>
+<li><strong>デフォルト:</strong> Googleの標準的な安全基準が適用されます。ほとんどのユーザーに推奨される、バランスの取れた設定です。</li>
+<li><strong>制限を緩和:</strong> 一部の安全フィルターの基準が緩和されます。より大胆で多様な物語展開が可能になりますが、デリケートなトピックや表現が含まれる可能性が少し高まります。</li>
+<li><strong>無制限（注意して使用）:</strong> ほとんどの安全フィルターが無効になります。この設定は、成人向けのテーマ、暴力的な描写、性的な内容など、人によっては不快に感じる可能性のあるコンテンツが生成されるリスクを伴います。この設定は、上記のリスクを十分に理解した上で、ご自身の責任においてご利用ください。</li>
+</ul>
+<h2 id="免責事項">免責事項 </h2>
+<p>本アプリケーションの使用によりAIが生成したコンテンツ、およびそれがプレイヤーに与えるいかなる影響（精神的な苦痛を含む）についても、開発者は一切の責任を負いかねます。プレイヤーは自身の判断と責任において、本ゲームをお楽しみください。</p>
+<h2 id="おわりに">おわりに </h2>
+<p>私たちは、AIと共に物語を創るという新しいエンターテイメントが、皆様にとって創造的で忘れられない体験になることを心から願っています。</p>
+<h2 id="補足事項">補足事項 </h2>
+<h3 id="ご利用にあたっての注意事項">ご利用にあたっての注意事項 </h3>
+<ul>
+<li><strong>Googleの利用規約:</strong> 本アプリケーションはGoogleのAPIを利用しています。ご利用にあたっては、Googleの利用規約に同意いただく必要があります。</li>
+<li><strong>APIキーの管理:</strong> APIキーは第三者に知られないよう、厳重に管理してください。</li>
+<li><strong>APIの利用制限:</strong> 無料プランをご利用の場合、APIの利用回数に制限があります。数回のプレイで1日の上限に達することがありますので、あらかじめご了承ください。</li>
+</ul>
+<h3 id="automatic1111版-stable-diffusion-web-ui連携機能について">AUTOMATIC1111版 Stable Diffusion Web UI連携機能について </h3>
+<p>この機能を利用することで、ローカル環境で実行しているAUTOMATIC1111版Web UIを画像生成に使用できます。</p>
+<ul>
+<li><strong>設定方法:</strong> スタートスクリーンで、画像ジェネレーターとして「AUTOMATIC1111 (ローカル)」を選択してください。</li>
+<li><strong>パラメータのカスタマイズ:</strong> API呼び出し時のパラメータは、スタートスクリーンの設定欄にJSON形式で入力することで上書きできます。</li>
+<li><strong>CORS設定:</strong> AUTOMATIC1111 Web UIを起動する際、クロスオリジンリソース共有（CORS）を許可する必要があります。コマンドライン引数に <code>--api --cors-allow-origins=*</code> を追加して起動してください。この設定がない場合、セキュリティ上の理由でブラウザからAPIを呼び出すことができません。</li>
+<li><strong>パフォーマンスに関する注意:</strong> デフォルトのパラメータは標準的な設定です。お使いのGPU性能（例: RTX3060など）によっては、画像の生成に時間がかかり、快適なゲームプレイが難しい場合があります。</li>
+<li><strong>高速化の例 (LCM):</strong> 以下は、LCM（Latent Consistency Models）を利用して画像生成を高速化する場合のパラメータ設定例です。</li>
+</ul>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"steps"</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+  <span class="token property">"cfg_scale"</span><span class="token operator">:</span> <span class="token number">1.6</span><span class="token punctuation">,</span>
+  <span class="token property">"sampler_name"</span><span class="token operator">:</span> <span class="token string">"LCM"</span><span class="token punctuation">,</span>
+  <span class="token property">"scheduler"</span><span class="token operator">:</span> <span class="token string">"SGM Uniform"</span><span class="token punctuation">,</span>
+  <span class="token property">"prompt"</span><span class="token operator">:</span> <span class="token string">"masterpiece, best quality, highres &lt;lora:LCMTurboMix_LCM_Sampler:1.2&gt;&lt;lora:illustriousXLv01_stabilizer_v1.198:0.3&gt;"</span><span class="token punctuation">,</span>
+  <span class="token property">"negative_prompt"</span><span class="token operator">:</span> <span class="token string">"worst quality, low quality, twins"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>explicit</code>などを入れると何でもない場面でひどいことになるのでおすすめしません。</li>
+</ul>
+<h3 id="hugging-face-spacesのapi利用について">Hugging Face SpacesのAPI利用について </h3>
+<p>Hugging Face Spacesで公開されているモデルをAPI経由で画像生成に利用することができます 。</p>
+<h4 id="主な特徴と設定">主な特徴と設定 </h4>
+<ul>
+<li><strong>APIの利用:</strong> Hugging Face Spacesで公開されているspaceをAPIで呼び出して利用します 。</li>
+<li><strong>トークン設定の推奨:</strong> 可能であれば、Hugging Faceのトークンを設定してください 。無料アカウントでも1日の生成上限回数が少し増加する場合があります 。</li>
+<li><strong>デフォルトモデル:</strong> 初期設定では <code>black-forest-labs/FLUX.1-schnell</code> がセットされています 。</li>
+<li><strong>モデルの変更:</strong> SDXLモデルを使用したspaceも利用可能です 。使用したいモデルのIDを設定してください 。</li>
+<li><strong>パラメータのカスタマイズ:</strong> パラメータはJSON形式で記述して設定できます 。
+<ul>
+<li>ゲーム側からは、物語に応じた <code>prompt</code> と <code>negative_prompt</code> が自動的に挿入されます 。</li>
+<li>モデルによっては不要なパラメータがあると動作しない場合があります 。その場合、消したいパラメータのキーの値に <code>delete</code> を設定することで、そのパラメータを無効化できます 。例えば、<code>negative_prompt</code> を無効にしたい場合は、JSON内で <code>"negative_prompt": "delete"</code> と記述します 。</li>
+</ul>
+</li>
+</ul>
+<h4 id="設定例multimodalartqwen-image-fast-を使用する場合">設定例：<code>multimodalart/Qwen-Image-Fast</code> を使用する場合 </h4>
+<p>以下は、<code>multimodalart/Qwen-Image-Fast</code> モデルを使用する際の設定例です 。この例では <code>negative_prompt</code>, <code>width</code>, <code>height</code> パラメータを無効化しています 。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"seed"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">"randomize_seed"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"aspect_ratio"</span><span class="token operator">:</span> <span class="token string">"4:3"</span><span class="token punctuation">,</span>
+  <span class="token property">"guidance_scale"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">"num_inference_steps"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token property">"prompt_enhance"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"negative_prompt"</span><span class="token operator">:</span> <span class="token string">"delete"</span><span class="token punctuation">,</span>
+  <span class="token property">"width"</span><span class="token operator">:</span> <span class="token string">"delete"</span><span class="token punctuation">,</span>
+  <span class="token property">"height"</span><span class="token operator">:</span> <span class="token string">"delete"</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h1 id="notes-on-characters-content-safety-and-the-nature-of-ai">Notes on Characters, Content Safety, and the Nature of AI </h1>
+<h2 id="introduction">Introduction </h2>
+<p>Thank you for playing "Gemini Adventure." This game utilizes state-of-the-art generative AI technology to create your own unique story and visuals in real-time.</p>
+<p>While the AI is constantly learning to provide the best experience, we hope you enjoy your adventure with the understanding of the following points, which are inherent to the nature of AI.</p>
+<h3 id="1-about-ai-generated-content">1. About AI-Generated Content </h3>
+<p>The stories, scene descriptions, choices, and images in this game are all dynamically generated by AI. Therefore, the story's progression is unpredictable, and expressions that are unintended by the developers or that may be considered inappropriate can occasionally be generated.</p>
+<p>We have implemented filters to provide a safe experience, but it is difficult to completely control all content that the AI generates. Please understand this as a characteristic of current AI technology.</p>
+<h3 id="2-about-character-description-consistency">2. About Character Description Consistency </h3>
+<p>The AI is designed to remember the appearance of the protagonist and other characters (gender, hairstyle, clothing, etc.) and maintain consistency. However, as the story becomes longer and more complex, the AI may sometimes create descriptions that contradict previous settings.</p>
+<p>This is due to the limitations of the AI's memory and its creative interpretation. If a character's appearance suddenly changes, we would appreciate it if you could either enjoy it as a new development in the story or quietly correct it in your mind.</p>
+<h3 id="3-content-safety-settings">3. Content Safety Settings </h3>
+<p>This game provides "AI Safety Level" settings, allowing users to select the strictness of the AI's responses.</p>
+<ul>
+<li><strong>Default:</strong> Google's standard safety criteria are applied. This is a balanced setting recommended for most users.</li>
+<li><strong>Less Restrictive:</strong> The criteria for some safety filters are relaxed. This allows for bolder and more diverse story developments, but slightly increases the possibility of including delicate topics or expressions.</li>
+<li><strong>Unrestricted (Use with caution):</strong> Most safety filters are disabled. This setting carries the risk of generating content that some people may find offensive, such as adult themes, violent descriptions, or sexual content. Please use this setting at your own risk, with a full understanding of the aforementioned risks.</li>
+</ul>
+<h2 id="disclaimer">Disclaimer </h2>
+<p>The developers assume no responsibility for any content generated by the AI through the use of this application, or for any impact it may have on the player, including emotional distress. Players should enjoy this game at their own discretion and responsibility.</p>
+<h2 id="conclusion">Conclusion </h2>
+<p>We sincerely hope that this new form of entertainment, where you create stories with AI, becomes a creative and unforgettable experience for everyone.</p>
+<h2 id="additional-notes">Additional Notes </h2>
+<h3 id="precautions-for-use">Precautions for Use </h3>
+<ul>
+<li><strong>Google's Terms of Service:</strong> This application uses Google's API. You must agree to Google's Terms of Service to use it.</li>
+<li><strong>API Key Management:</strong> Please strictly manage your API key to prevent it from becoming known to third parties.</li>
+<li><strong>API Usage Limits:</strong> If you are using the free plan, there are limits on the number of API calls. Please be aware that you may reach the daily limit after just a few plays.</li>
+</ul>
+<h3 id="about-the-automatic1111-stable-diffusion-web-ui-integration-feature">About the AUTOMATIC1111 Stable Diffusion Web UI Integration Feature </h3>
+<p>This feature allows you to use the AUTOMATIC1111 Web UI running on your local environment for image generation.</p>
+<ul>
+<li><strong>How to set up:</strong> On the start screen, select "AUTOMATIC1111 (Local)" as the image generator.</li>
+<li><strong>Parameter customization:</strong> You can override the parameters for API calls by entering them in JSON format in the settings field on the start screen.</li>
+<li><strong>CORS settings:</strong> When starting the AUTOMATIC1111 Web UI, you must enable Cross-Origin Resource Sharing (CORS). Start it by adding <code>--api --cors-allow-origins=*</code> to the command-line arguments. Without this setting, the API cannot be called from the browser due to security reasons.</li>
+<li><strong>Performance notes:</strong> The default parameters are standard settings. Depending on your GPU performance (e.g., RTX 3060), image generation may take a long time, making for a less comfortable gaming experience.</li>
+<li><strong>Example for speeding up (LCM):</strong> The following is an example of parameter settings for speeding up image generation using Latent Consistency Models (LCM).</li>
+</ul>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"steps"</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+  <span class="token property">"cfg_scale"</span><span class="token operator">:</span> <span class="token number">1.6</span><span class="token punctuation">,</span>
+  <span class="token property">"sampler_name"</span><span class="token operator">:</span> <span class="token string">"LCM"</span><span class="token punctuation">,</span>
+  <span class="token property">"scheduler"</span><span class="token operator">:</span> <span class="token string">"SGM Uniform"</span><span class="token punctuation">,</span>
+  <span class="token property">"prompt"</span><span class="token operator">:</span> <span class="token string">"masterpiece, best quality, highres&lt;lora:LCMTurboMix_LCM_Sampler:1.2&gt;&lt;lora:illustriousXLv01_stabilizer_v1.198:0.3&gt;"</span><span class="token punctuation">,</span>
+  <span class="token property">"negative_prompt"</span><span class="token operator">:</span> <span class="token string">"worst quality, low quality, twins"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li>We do not recommend including <code>explicit</code> or similar terms, as they can lead to terrible results in innocuous scenes.</li>
+</ul>
+<h3 id="about-using-the-hugging-face-spaces-api">About Using the Hugging Face Spaces API </h3>
+<p>You can use models available on Hugging Face Spaces for image generation via an API.</p>
+<h4 id="key-features-and-settings">Key Features and Settings </h4>
+<ul>
+<li><strong>API Usage:</strong> You can call and utilize public spaces on Hugging Face Spaces via the API.</li>
+<li><strong>Token Recommendation:</strong> If possible, please set your Hugging Face token. Doing so may slightly increase the daily generation limit for free accounts.</li>
+<li><strong>Default Model:</strong> The default model is set to <code>black-forest-labs/FLUX.1-schnell</code>.</li>
+<li><strong>Changing Models:</strong> Spaces that use SDXL models are also available. Please set the ID of the model you wish to use.</li>
+<li><strong>Parameter Customization:</strong> Parameters can be configured in JSON format.
+<ul>
+<li>The game automatically inserts <code>prompt</code> and <code>negative_prompt</code> based on the story.</li>
+<li>Some models may not function correctly if unnecessary parameters are included. In such cases, you can disable a parameter by setting its key's value to <code>delete</code>. For example, to disable the <code>negative_prompt</code>, you would write <code>"negative_prompt": "delete"</code> in the JSON.</li>
+</ul>
+</li>
+</ul>
+<h4 id="configuration-example-using-multimodalartqwen-image-fast">Configuration Example: Using <code>multimodalart/Qwen-Image-Fast</code> </h4>
+<p>The following is a configuration example for using the <code>multimodalart/Qwen-Image-Fast</code> model. In this example, the <code>negative_prompt</code>, <code>width</code>, and <code>height</code> parameters are disabled.</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"seed"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">"randomize_seed"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"aspect_ratio"</span><span class="token operator">:</span> <span class="token string">"4:3"</span><span class="token punctuation">,</span>
+  <span class="token property">"guidance_scale"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">"num_inference_steps"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token property">"prompt_enhance"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"negative_prompt"</span><span class="token operator">:</span> <span class="token string">"delete"</span><span class="token punctuation">,</span>
+  <span class="token property">"width"</span><span class="token operator">:</span> <span class="token string">"delete"</span><span class="token punctuation">,</span>
+  <span class="token property">"height"</span><span class="token operator">:</span> <span class="token string">"delete"</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h1 id="关于角色-内容安全及ai本质的注意事项">关于角色、内容安全及AI本质的注意事项 </h1>
+<h2 id="前言">前言 </h2>
+<p>非常感谢您游玩《双子座冒险》。本游戏利用最先进的生成式AI技术，实时为您创建独一无二的故事和视觉效果。</p>
+<p>为了提供最佳体验，AI正在不断学习，但希望您在理解其本质的基础上享受这次冒险。</p>
+<h3 id="1-关于ai生成的内容">1. 关于AI生成的内容 </h3>
+<p>本游戏的故事、场景描写、选项以及图片全部由AI动态生成。因此，故事的发展是不可预测的，有时可能会生成开发者未预料到或认为不恰当的表达。</p>
+<p>我们已设置了过滤器以提供安全体验，但要完全控制AI生成的所有内容是困难的。请将此视为当前AI技术的一个特点。</p>
+<h3 id="2-关于角色描写的一致性">2. 关于角色描写的一致性 </h3>
+<p>AI被设计用来记住故事主角和登场人物的外貌（性别、发型、服装等），并保持一致性。然而，随着故事变得更长、更复杂，偶尔会发生与之前设定相矛盾的描写。</p>
+<p>这是由于AI记忆的局限性或创造性解读所致。如果角色的外貌突然改变，我们希望您可以将其视为故事的新发展来享受，或在心中默默地修正。</p>
+<h3 id="3-内容安全设置">3. 内容安全设置 </h3>
+<p>本游戏提供了“AI安全级别”设置，用户可以选择AI响应的严格程度。</p>
+<ul>
+<li><strong>默认:</strong> 采用Google的标准安全准则。这是一个平衡的设置，推荐给大多数用户。</li>
+<li><strong>限制较少:</strong> 放宽了部分安全过滤器的标准。这使得故事发展更加大胆和多样化，但包含敏感话题或表达的可能性也略有增加。</li>
+<li><strong>无限制（请谨慎使用）:</strong> 大部分安全过滤器将被禁用。此设置伴随着生成可能令人不适的内容的风险，例如成人主题、暴力描写或性内容。请在充分理解上述风险的基础上，自行承担责任使用此设置。</li>
+</ul>
+<h2 id="免责声明">免责声明 </h2>
+<p>对于因使用本应用程序而由AI生成的内容，以及其对玩家造成的任何影响（包括精神痛苦），开发者不承担任何责任。请玩家自行判断并承担责任，享受本游戏。</p>
+<h2 id="结语">结语 </h2>
+<p>我们衷心希望这种与AI共同创作故事的新型娱乐方式，能为大家带来富有创造性且难忘的体验。</p>
+<h2 id="补充事项">补充事项 </h2>
+<h3 id="使用注意事项">使用注意事项 </h3>
+<ul>
+<li><strong>Google服务条款:</strong> 本应用程序使用了Google的API。您必须同意Google的服务条款才能使用。</li>
+<li><strong>API密钥管理:</strong> 请严格管理您的API密钥，以防被第三方知悉。</li>
+<li><strong>API使用限制:</strong> 如果您使用免费计划，API调用次数会受到限制。请预先知悉，几次游戏后可能会达到每日上限。</li>
+</ul>
+<h3 id="关于automatic1111版-stable-diffusion-web-ui联动功能">关于AUTOMATIC1111版 Stable Diffusion Web UI联动功能 </h3>
+<p>利用此功能，您可以使用在本地环境中运行的AUTOMATIC1111版Web UI来生成图片。</p>
+<ul>
+<li><strong>设置方法:</strong> 在启动画面中，选择“AUTOMATIC1111 (本地)”作为图片生成器。</li>
+<li><strong>参数自定义:</strong> 您可以通过在启动画面的设置栏中以JSON格式输入，来覆盖API调用时的参数。</li>
+<li><strong>CORS设置:</strong> 启动AUTOMATIC1111 Web UI时，需要允许跨域资源共享（CORS）。请在命令行参数中添加 <code>--api --cors-allow-origins=*</code> 来启动。如果没有此设置，出于安全原因，浏览器无法调用API。</li>
+<li><strong>性能注意事项:</strong> 默认参数为标准设置。根据您使用的GPU性能（例如：RTX3060等），图片生成可能会耗费较长时间，难以提供流畅的游戏体验。</li>
+<li><strong>加速示例 (LCM):</strong> 以下是使用LCM（Latent Consistency Models）加速图片生成时的参数设置示例。</li>
+</ul>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"steps"</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+  <span class="token property">"cfg_scale"</span><span class="token operator">:</span> <span class="token number">1.6</span><span class="token punctuation">,</span>
+  <span class="token property">"sampler_name"</span><span class="token operator">:</span> <span class="token string">"LCM"</span><span class="token punctuation">,</span>
+  <span class="token property">"scheduler"</span><span class="token operator">:</span> <span class="token string">"SGM Uniform"</span><span class="token punctuation">,</span>
+  <span class="token property">"prompt"</span><span class="token operator">:</span> <span class="token string">"masterpiece, best quality, highres&lt;lora:LCMTurboMix_LCM_Sampler:1.2&gt;&lt;lora:illustriousXLv01_stabilizer_v1.198:0.3&gt;"</span><span class="token punctuation">,</span>
+  <span class="token property">"negative_prompt"</span><span class="token operator">:</span> <span class="token string">"worst quality, low quality, twins"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li>我们不推荐添加<code>explicit</code>等词语，因为这可能会在不相关的场景中导致糟糕的结果。</li>
+</ul>
+<h3 id="关于hugging-face-spaces-api的使用">关于Hugging Face Spaces API的使用 </h3>
+<p>您可以通过API使用Hugging Face Spaces上公开的模型来生成图像。</p>
+<h4 id="主要功能与设置">主要功能与设置 </h4>
+<ul>
+<li><strong>API使用:</strong> 通过API调用并使用Hugging Face Spaces上公开的space。</li>
+<li><strong>推荐设置Token:</strong> 如果可能，请设置您的Hugging Face Token。  即使是免费账户，每日的生成次数上限也可能因此少量增加。</li>
+<li><strong>默认模型:</strong> 默认设置为 <code>black-forest-labs/FLUX.1-schnell</code>。</li>
+<li><strong>更换模型:</strong> 也可以使用采用了SDXL模型的space。  请设置您想使用的模型的ID。</li>
+<li><strong>自定义参数:</strong> 可以通过JSON格式来编写和设置参数。
+<ul>
+<li>游戏会根据故事情节自动插入 <code>prompt</code> 和 <code>negative_prompt</code>。</li>
+<li>根据模型的不同，如果存在不必要的参数，可能导致无法正常工作。  在这种情况下，您可以通过将想删除的参数键的值设为 <code>delete</code> 来禁用该参数。  例如，若想禁用 <code>negative_prompt</code>，则在JSON中记述为 <code>"negative_prompt": "delete"</code>。</li>
+</ul>
+</li>
+</ul>
+<h4 id="设置示例使用-multimodalartqwen-image-fast-的情况">设置示例：使用 <code>multimodalart/Qwen-Image-Fast</code> 的情况 </h4>
+<p>以下是使用 <code>multimodalart/Qwen-Image-Fast</code> 模型时的设置示例。  在此示例中，<code>negative_prompt</code>、<code>width</code> 和 <code>height</code> 参数被禁用。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"seed"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">"randomize_seed"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"aspect_ratio"</span><span class="token operator">:</span> <span class="token string">"4:3"</span><span class="token punctuation">,</span>
+  <span class="token property">"guidance_scale"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">"num_inference_steps"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token property">"prompt_enhance"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"negative_prompt"</span><span class="token operator">:</span> <span class="token string">"delete"</span><span class="token punctuation">,</span>
+  <span class="token property">"width"</span><span class="token operator">:</span> <span class="token string">"delete"</span><span class="token punctuation">,</span>
+  <span class="token property">"height"</span><span class="token operator">:</span> <span class="token string">"delete"</span>
+<span class="token punctuation">}</span>
+</code></pre>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
