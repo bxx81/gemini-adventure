@@ -83,5 +83,8 @@
   "historyViewStoryButton": "View Full Story",
   "chronicleTitle": "Story Chronicle",
   "chronicleDescription": "The complete story leading to this point in your adventure.",
-  "chronicleBackButton": "Back to Story Endings"
+  "chronicleBackButton": "Back to Story Endings",
+  "exportStoryButton": "Export Story as ZIP",
+  "exportingStoryButton": "Exporting...",
+  "exportFailed": "Story export failed. Check the console for details."
 }
