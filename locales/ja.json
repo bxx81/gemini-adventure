@@ -83,5 +83,9 @@
   "historyViewStoryButton": "全ストーリーを表示",
   "chronicleTitle": "物語の記録",
   "chronicleDescription": "あなたの冒険がこの地点に至るまでの全記録です。",
-  "chronicleBackButton": "結末一覧に戻る"
+  "chronicleBackButton": "結末一覧に戻る",
+  "exportStoryButton": "ZIP形式でエクスポート",
+  "exportingStoryButton": "エクスポート中...",
+  "exportFailed": "物語のエクスポートに失敗しました。詳細はコンソールを確認してください。",
+  "customChoicePlaceholder": "または、自由に行動を記述..."
 }

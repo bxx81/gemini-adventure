@@ -83,5 +83,9 @@
   "historyViewStoryButton": "查看完整故事",
   "chronicleTitle": "故事编年史",
   "chronicleDescription": "这是您冒险到达此点的完整故事。",
-  "chronicleBackButton": "返回结局列表"
+  "chronicleBackButton": "返回结局列表",
+  "exportStoryButton": "导出故事为 ZIP",
+  "exportingStoryButton": "正在导出...",
+  "exportFailed": "故事导出失败。请检查控制台以获取详细信息。",
+  "customChoicePlaceholder": "或者，输入你自己的行动..."
 }
