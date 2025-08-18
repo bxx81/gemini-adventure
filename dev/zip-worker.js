@@ -1,6 +1,7 @@
 self.importScripts('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js');
 
 const SAVE_DIR = 'gemini-adventure-saves';
+const { JSZip } = self;
 
 async function getNodeImageAsFile(logId, nodeId) {
     try {
