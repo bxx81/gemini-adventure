@@ -86,5 +86,6 @@
   "chronicleBackButton": "返回结局列表",
   "exportStoryButton": "导出故事为 ZIP",
   "exportingStoryButton": "正在导出...",
-  "exportFailed": "故事导出失败。请检查控制台以获取详细信息。"
+  "exportFailed": "故事导出失败。请检查控制台以获取详细信息。",
+  "customChoicePlaceholder": "或者，输入你自己的行动..."
 }

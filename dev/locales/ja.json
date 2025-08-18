@@ -86,5 +86,6 @@
   "chronicleBackButton": "結末一覧に戻る",
   "exportStoryButton": "ZIP形式でエクスポート",
   "exportingStoryButton": "エクスポート中...",
-  "exportFailed": "物語のエクスポートに失敗しました。詳細はコンソールを確認してください。"
+  "exportFailed": "物語のエクスポートに失敗しました。詳細はコンソールを確認してください。",
+  "customChoicePlaceholder": "または、自由に行動を記述..."
 }

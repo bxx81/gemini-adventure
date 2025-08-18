@@ -86,5 +86,6 @@
   "chronicleBackButton": "Back to Story Endings",
   "exportStoryButton": "Export Story as ZIP",
   "exportingStoryButton": "Exporting...",
-  "exportFailed": "Story export failed. Check the console for details."
+  "exportFailed": "Story export failed. Check the console for details.",
+  "customChoicePlaceholder": "Or, type your own action..."
 }
