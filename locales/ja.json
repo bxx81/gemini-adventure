@@ -68,7 +68,7 @@
   "deleteAllDataButton": "全データを削除",
   "deleteAllDataWarning": "この操作はすべてのセーブデータ、設定、APIキーを完全に削除します。この操作は元に戻せません。",
   "deleteAllDataConfirm": "すべてのセーブデータと設定を削除してもよろしいですか？この操作は元に戻せません。",
-  "noteLink": "キャラクターとコンテンツの安全性に関する注記",
+  "guideLink": "ユーザーガイド",
   "loadScreenTitle": "保存した冒険をロード",
   "loadScreenNoSaves": "保存されたゲームはありません。",
   "loadScreenTimestampLabel": "最終プレイ:",
@@ -88,5 +88,15 @@
   "exportStoryButton": "ZIP形式でエクスポート",
   "exportingStoryButton": "エクスポート中...",
   "exportFailed": "物語のエクスポートに失敗しました。詳細はコンソールを確認してください。",
-  "customChoicePlaceholder": "または、自由に行動を記述..."
+  "customChoicePlaceholder": "または、自由に行動を記述...",
+  "helpImageGenerator": "ゲームの画像をどのように生成するかを選択します。Googleの強力なAIを使用したり、ご自身のローカル画像生成サーバーに接続したり、画像を完全に無効にしたりできます。",
+  "helpA1111Endpoint": "AUTOMATIC1111/Stable Diffusion Web UIサーバーの完全なURLを「http://」または「https://」を含めて入力します。サーバーは「--api」付きで起動し、CORSが有効になっている必要があります。",
+  "helpA1111Config": "txt2img APIの優先的なデフォルトパラメータをJSONオブジェクトで指定します。これらの設定（サンプラー、ステップ数など）は、AIが生成したプロンプトとマージされます。",
+  "helpComfyUIEndpoint": "ComfyUIサーバーの完全なURLを「http://」または「https://」を含めて入力します。サーバーはCORSを有効にして起動する必要があります（例：「--enable-cors-header」）。",
+  "helpComfyUIWorkflow": "ComfyUIワークフローの「APIフォーマット」JSONを貼り付けます。プレースホルダー##prompt##、##negative_prompt##、およびシード番号1234567890は、生成中に自動的に置き換えられます。",
+  "helpHuggingFaceSpaceId": "Hugging Face上の公開または非公開の画像生成Spaceの識別子を「組織/スペース名」の形式で指定します（例：「stabilityai/stable-diffusion-3-medium」）。",
+  "helpHuggingFaceToken": "非公開またはゲート付きのSpaceを使用するには、Hugging Faceのユーザーアクセストークンが必要です。Hugging Faceアカウントの設定から取得できます。",
+  "helpHuggingFaceConfig": "SpaceのAPIのデフォルトパラメータをJSONオブジェクトで指定します。これは各Spaceに固有のものです。利用可能なオプションについては、SpaceのAPIドキュメントを確認してください。",
+  "helpSafetyLevel": "AIの物語生成におけるコンテンツの安全フィルターを制御します。「デフォルト」は標準、「制限を緩和」はより成熟したテーマを許可し、「無制限」はほとんどのフィルターを無効にします（注意して使用してください）。",
+  "learnMoreLink": "詳細を見る"
 }

@@ -68,7 +68,7 @@
   "deleteAllDataButton": "删除所有数据",
   "deleteAllDataWarning": "此操作将永久删除所有存档数据、设置和 API 密钥。此操作无法撤销。",
   "deleteAllDataConfirm": "您确定要删除所有保存数据和设置吗？此操作无法撤销。",
-  "noteLink": "关于角色和内容安全的说明",
+  "guideLink": "用户指南",
   "loadScreenTitle": "加载已保存的冒险",
   "loadScreenNoSaves": "您没有已保存的游戏。",
   "loadScreenTimestampLabel": "上次游玩:",
@@ -88,5 +88,15 @@
   "exportStoryButton": "导出故事为 ZIP",
   "exportingStoryButton": "正在导出...",
   "exportFailed": "故事导出失败。请检查控制台以获取详细信息。",
-  "customChoicePlaceholder": "或者，输入你自己的行动..."
+  "customChoicePlaceholder": "或者，输入你自己的行动...",
+  "helpImageGenerator": "选择如何生成游戏图像。您可以使用谷歌强大的人工智能，连接到您自己的本地图像生成服务器，或完全禁用图像。",
+  "helpA1111Endpoint": "输入您的 AUTOMATIC1111/Stable Diffusion Web UI 服务器的完整 URL，包括“http://”或“https://”。服务器必须以“--api”启动并启用 CORS。",
+  "helpA1111Config": "为 txt2img API 提供一个包含您首选默认参数的 JSON 对象。这些设置（如采样器、步数等）将与 AI 生成的提示合并。",
+  "helpComfyUIEndpoint": "输入您的 ComfyUI 服务器的完整 URL，包括“http://”或“https://”。服务器必须启用 CORS（例如“--enable-cors-header”）才能启动。",
+  "helpComfyUIWorkflow": "粘贴 ComfyUI 工作流的“API 格式”JSON。占位符 ##prompt##、##negative_prompt## 和种子编号 1234567890 将在生成过程中自动替换。",
+  "helpHuggingFaceSpaceId": "Hugging Face 上公共或私有图像生成 Space 的标识符，格式为 'organization/space-name'（例如 'stabilityai/stable-diffusion-3-medium'）。",
+  "helpHuggingFaceToken": "使用私有或受限的 Space 需要 Hugging Face 用户访问令牌。您可以从您的 Hugging Face 帐户设置中获取。",
+  "helpHuggingFaceConfig": "为 Space 的 API 提供一个包含默认参数的 JSON 对象。这在每个 Space 中都是高度特定的；请检查 Space 的 API 文档以获取可用选项。",
+  "helpSafetyLevel": "控制 AI 故事生成的内容安全过滤器。“默认”是标准，“限制较少”允许更成熟的主题，“无限制”禁用大多数过滤器（请谨慎使用）。",
+  "learnMoreLink": "了解更多"
 }

@@ -68,7 +68,7 @@
   "deleteAllDataButton": "Delete All Data",
   "deleteAllDataWarning": "This will permanently delete all save data, settings, and API keys. This action cannot be undone.",
   "deleteAllDataConfirm": "Are you sure you want to delete all save data and settings? This action cannot be undone.",
-  "noteLink": "A Note on Character and Content Safety",
+  "guideLink": "User Guide",
   "loadScreenTitle": "Load a Saved Adventure",
   "loadScreenNoSaves": "You have no saved games.",
   "loadScreenTimestampLabel": "Last played:",
@@ -88,5 +88,15 @@
   "exportStoryButton": "Export Story as ZIP",
   "exportingStoryButton": "Exporting...",
   "exportFailed": "Story export failed. Check the console for details.",
-  "customChoicePlaceholder": "Or, type your own action..."
+  "customChoicePlaceholder": "Or, type your own action...",
+  "helpImageGenerator": "Choose how the game's images will be generated. You can use Google's powerful AI, connect to your own local image generation server, or disable images entirely.",
+  "helpA1111Endpoint": "Enter the full URL for your AUTOMATIC1111/Stable Diffusion Web UI server, including 'http://' or 'https://'. The server must be started with '--api' and CORS enabled.",
+  "helpA1111Config": "Provide a JSON object with your preferred default parameters for the txt2img API. These settings (like sampler, steps, etc.) will be merged with the AI's generated prompt.",
+  "helpComfyUIEndpoint": "Enter the full URL for your ComfyUI server, including 'http://' or 'https://'. The server must be started with CORS enabled (e.g., '--enable-cors-header').",
+  "helpComfyUIWorkflow": "Paste the 'API Format' JSON of your ComfyUI workflow. The placeholders ##prompt##, ##negative_prompt##, and the seed number 1234567890 will be automatically replaced during generation.",
+  "helpHuggingFaceSpaceId": "The identifier for a public or private image generation Space on Hugging Face, in the format 'organization/space-name' (e.g., 'stabilityai/stable-diffusion-3-medium').",
+  "helpHuggingFaceToken": "A Hugging Face User Access Token is required to use private or gated Spaces. You can get one from your Hugging Face account settings.",
+  "helpHuggingFaceConfig": "Provide a JSON object with default parameters for the Space's API. This is highly specific to each Space; check the Space's API documentation for available options.",
+  "helpSafetyLevel": "Controls the content safety filter for the AI's story generation. 'Default' is standard, 'Less Restrictive' allows more mature themes, and 'Unrestricted' disables most filters (use with caution).",
+  "learnMoreLink": "Learn more"
 }
