@@ -41,6 +41,9 @@ function generateHtml(storyPath, theme, t) {
     
     for (const node of storyPath) {
         const sceneText = escapeHtml(node.sceneData.scene).replace(/\n/g, '<br>');
+        const gameOverText = node.sceneData.isGameOver && node.sceneData.gameOverText
+            ? `<p class="gameover-text">${escapeHtml(node.sceneData.gameOverText).replace(/\n/g, '<br>')}</p>`
+            : '';
         const imagePrompt = escapeHtml(node.sceneData.imagePrompt);
         const choiceText = node.choiceText ? `<p class="choice-text"><strong>${escapeHtml(t.historyChoicePrefix)}:</strong> "${escapeHtml(node.choiceText)}"</p>` : '';
 
@@ -48,6 +51,7 @@ function generateHtml(storyPath, theme, t) {
             <div class="node">
                 <img src="./images/${node.id}.webp" alt="${imagePrompt}" class="scene-image" onerror="this.style.display='none'">
                 <p class="scene-text">${sceneText}</p>
+                ${gameOverText}
                 ${choiceText}
             </div>
         `;
@@ -72,6 +76,7 @@ function generateHtml(storyPath, theme, t) {
         .node:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 10px; }
         .scene-image { width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; aspect-ratio: 4 / 3; object-fit: cover; background-color: #374151; }
         .scene-text { font-size: 1.1em; }
+        .gameover-text { margin-top: 20px; font-weight: bold; }
         .choice-text { margin-top: 20px; padding: 15px; background-color: #374151; border-left: 4px solid #8b5cf6; border-radius: 4px; }
         strong { color: #c4b5fd; }
     </style>
