@@ -3,6 +3,7 @@
   "description": "在您自己设计的世界中打造一个独特的故事。在下方描述场景，让AI通过动态叙事和视觉效果为您的冒险注入活力。",
   "worldDescriptionLabel": "描述你的冒险主题",
   "worldDescriptionPlaceholder": "例如，一个被霓虹灯浸透、持续下雨的赛博朋克城市",
+  "uploadImageButton": "附加文件",
   "imageGeneratorLabel": "图像生成器",
   "googleAIOption": "谷歌 AI (Imagen)",
   "googleFlashOption": "谷歌 AI (Flash 预览版)",

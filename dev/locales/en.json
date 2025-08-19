@@ -3,6 +3,7 @@
   "description": "Craft a unique story in a world of your own design. Describe the setting below, and let AI bring your adventure to life with dynamic narrative and visuals.",
   "worldDescriptionLabel": "Describe your adventure's theme",
   "worldDescriptionPlaceholder": "e.g., a neon-drenched cyberpunk city under constant rain",
+  "uploadImageButton": "Attach Files",
   "imageGeneratorLabel": "Image Generator",
   "googleAIOption": "Google AI (Imagen)",
   "googleFlashOption": "Google AI (Flash Preview)",
