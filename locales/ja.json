@@ -3,6 +3,7 @@
   "description": "あなた自身がデザインした世界で、ユニークな物語を創りましょう。以下に設定を記述し、AIがダイナミックな物語とビジュアルであなたの冒険に命を吹き込みます。",
   "worldDescriptionLabel": "冒険のテーマを説明してください",
   "worldDescriptionPlaceholder": "例：絶え間なく雨が降る、ネオンに照らされたサイバーパンク都市",
+  "uploadImageButton": "ファイルを添付",
   "imageGeneratorLabel": "画像ジェネレーター",
   "googleAIOption": "Google AI (Imagen)",
   "googleFlashOption": "Google AI (Flashプレビュー)",
