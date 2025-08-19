@@ -21,21 +21,21 @@
   ],
   "screenshots": [
     {
-      "src": "images/screenshots/screenshot-m01.webp",
+      "src": "screenshots/screenshot-m01.webp",
       "sizes": "828x1792",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Adventure Setup Screen"
     },
     {
-      "src": "images/screenshots/screenshot-m02.webp",
+      "src": "screenshots/screenshot-m02.webp",
       "sizes": "828x1792",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Gameplay in Action"
     },
     {
-      "src": "images/screenshots/screenshot-m03.webp",
+      "src": "screenshots/screenshot-m03.webp",
       "sizes": "828x1792",
       "type": "image/webp",
       "form_factor": "narrow",
