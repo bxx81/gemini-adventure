@@ -9,33 +9,33 @@
   "theme_color": "#EEEFF0",
   "icons": [
     {
-      "src": "icons/favicon192.png",
+      "src": "/gemini-adventure/icons/favicon192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/favicon512.png",
+      "src": "/gemini-adventure/icons/favicon512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "screenshots/screenshot-m01.webp",
+      "src": "/gemini-adventure/screenshots/screenshot-m01.webp",
       "sizes": "828x1792",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Adventure Setup Screen"
     },
     {
-      "src": "screenshots/screenshot-m02.webp",
+      "src": "/gemini-adventure/screenshots/screenshot-m02.webp",
       "sizes": "828x1792",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Gameplay in Action"
     },
     {
-      "src": "screenshots/screenshot-m03.webp",
+      "src": "/gemini-adventure/screenshots/screenshot-m03.webp",
       "sizes": "828x1792",
       "type": "image/webp",
       "form_factor": "narrow",
